@@ -1,5 +1,4 @@
 
-
 function getComputerChoice() {
     let computerNO = Math.ceil(Math.random() * 3);
     if (computerNO === 1) {
@@ -21,11 +20,6 @@ function getHumanChoice() {
         return "scissors";
     } else return null;
 }
-
-
-
-
-
 
 function playGame() {
     let humanScore = 0;
