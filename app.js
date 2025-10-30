@@ -1,3 +1,8 @@
+
+let humanScore = 0;
+let computerScore = 0;
+
+
 function getComputerChoice() {
     let computerNO = Math.ceil(Math.random() * 3);
     if (computerNO === 1) {
