@@ -26,7 +26,7 @@ body {
   max-width: 80%;
   padding: 16px 24px;
   margin: 2rem auto;
-  border: 1px solid #ffffff;
+  border: 1px solid hsl(246, 11%, 37%);
   border-radius: .4rem;
 }
 
@@ -52,6 +52,47 @@ body {
   font-weight: 700;
   color: hsl(261, 51%, 44%);
 }
+
+main {
+  background-image: url('./images/bg-triangle.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24rem;
+  height: 24rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rem;
+}
+
+main button {
+  width: 8rem;
+  height: 8rem;
+  background-color: #ffffff;
+  border-width: 16px;
+  border-style: solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+main button#paper {
+  border-color: hsl(230, 89%, 62%);
+}
+
+main button#scissors {
+  border-color: hsl(39, 89%, 49%);
+}
+
+main button#rock {
+  border-color: hsl(349, 71%, 52%);
+  margin: auto;
+}
+
+
+
+
+
+
 
 @media (max-width: 28rem) {
   #header {

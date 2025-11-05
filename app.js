@@ -50,12 +50,5 @@ function playGame() {
         }
     }
     
-    
-    for (let i = 0; i < 5; i++){
-        const humanAnswer = getHumanChoice();
-        const computerAnswer = getComputerChoice();
-        playRound(humanAnswer, computerAnswer);
-    }
-    
     console.log(`You: ${humanScore} || Computer: ${computerScore}`);
 }
