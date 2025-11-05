@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap');
+
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -7,4 +10,77 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-image: radial-gradient(circle at center top, hsl(214, 47%, 23%), hsl(237, 48%, 15%));
+  background-repeat: no-repeat;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40rem;
+  max-width: 80%;
+  padding: 16px 24px;
+  margin: 2rem auto;
+  border: 1px solid #ffffff;
+  border-radius: .4rem;
+}
+
+#header h1 {
+  color: #ffffff;
+  line-height: 0.8;
+}
+
+#header #scoreboard {
+  background-color: #ffffff;
+  padding: 8px 32px;
+  border-radius: .3rem;
+  text-align: center;
+}
+
+#header #scoreboard #score-text {
+  color: hsl(229, 64%, 46%);
+  font-weight: 600;
+}
+
+#header #scoreboard #score {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(261, 51%, 44%);
+}
+
+@media (max-width: 28rem) {
+  #header {
+    width: 24rem;
+    max-width: 85%;
+    padding: 8px 12px;
+    margin: 1rem auto;
+    border: 1px solid #ffffff;
+    border-radius: .4rem;
+}
+
+  #header h1 {
+    font-size: larger;
+    line-height: 0.8;
+}
+  #header #scoreboard {
+    padding: 4px 24px;
+    line-height: 1;
+}
+
+  #header #scoreboard #score-text {
+  color: hsl(229, 64%, 46%);
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+#header #scoreboard #score {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
 }
